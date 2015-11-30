@@ -1,6 +1,7 @@
 # Sudoless-Shutdown
 A project to deliver a sudoless shutdown script to use, I wanted to make a continum to the bash script that logged you out, but I really have come to realize that the shutdown is not as trivial. As a learning experience it looks like a great project.
 
+(Clarification :: I don't want to give any bash shell the privilege to run as a sudo without password prompt - this is trivial and easily done. Rather I want to explore the alternatives to create a heavy-weight hack around the issue as a learning experience.)
 
 @TODO:
 
@@ -18,6 +19,11 @@ check: (3) nih-dbus/*.h library
 !!!
 
 Sysvinit.h  -? Might be an easy solution. @Sysvinit package.
+
+@TODO:
+
+System Daemon PolicyKit - if a basic hack around the issue fails, a possible hack around PolicyKit might be necessary. 
+It would at least become very interesting, if this is the case in here. However there exists a workaround by creating a Daemon that would deliver the hack.
 
 
 ------------------------------------------
