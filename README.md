@@ -1,4 +1,11 @@
 # Sudoless-Shutdown
+
+Well seems like after going through manpages and reading sourcecode I found the solution from where I expected to find it. When looking at the solution now, I feel like google was not a strong one this time.
+
+It certainly felt refreshing that I did not have to be a slave to google-work-arounds and that the issue was unique enough to not have exisisted in many places, the way how I desired it to be. :)
+
+----------------------------------------------------------
+
 A project to deliver a sudoless shutdown script to use, I wanted to make a continum to the bash script that logged you out, but I really have come to realize that the shutdown is not as trivial. As a learning experience it looks like a great project.
 
 (Clarification :: I don't want to give any bash shell the privilege to run as a sudo without password prompt - this is trivial and easily done. Rather I want to explore the alternatives to create a heavy-weight hack around the issue as a learning experience.)
