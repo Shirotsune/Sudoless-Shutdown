@@ -7,11 +7,18 @@ A project to deliver a sudoless shutdown script to use, I wanted to make a conti
 --- in C ---
 
 check: (1) sysv.h library
+
 check: (2) nih/*.h library
+
 check: (3) nih-dbus/*.h library
 
-(2, 3 ) libhin (external)
+(2, 3 ) libnih (external)
 (1) upstart (internal, in compiled kernel)
+
+!!!
+
+Sysvinit.h  -? Might be an easy solution. @Sysvinit package.
+
 
 ------------------------------------------
 
