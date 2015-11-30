@@ -36,3 +36,11 @@ For the purpose for project the c file in upstart internal kernel; the shutdown 
 -------------------------------------------
 
 It seems that adapting around PolKit is the way to go. After going through the source code of PolicyKit and seeing what it does over the manpage.
+
+-------------------------------------------
+
+As for some good news as I've been running GNOME in my ubuntu I've noticed that the gnome-session-quit is effective in terms of providing the shutdown functionality. Once again checking the ownership of the processes it is running on a non-sudo env. Logout seemed to be trivially implimented and might and probably is a lot nicer for the system than killall -u @USER. 
+
+I'm currently analysing gnome source to see how the dbus is utilized, if it's the most promising one, I'll only hunt for the functions that GNOME use to shutdown the system and just replicate that process.
+
+The thing that I'm mostly curious about is to see what PolKit has to say about it.
