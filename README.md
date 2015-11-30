@@ -3,6 +3,7 @@ A project to deliver a sudoless shutdown script to use, I wanted to make a conti
 
 (Clarification :: I don't want to give any bash shell the privilege to run as a sudo without password prompt - this is trivial and easily done. Rather I want to explore the alternatives to create a heavy-weight hack around the issue as a learning experience.)
 
+@PROJECT:
 About doability of the said issue: A potential hack should exist due to the fact that many GUI's call these out and the baseline. A basic grep with ps aux proved that for example unity runs as user but has the access for the shutdown functions.
 
 @TODO:
