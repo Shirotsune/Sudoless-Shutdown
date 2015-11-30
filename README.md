@@ -1,6 +1,6 @@
 # Sudoless-Shutdown
 
-Well seems like after going through manpages and reading sourcecode I found the solution from where I expected to find it. When looking at the solution now, I feel like google was not a strong one this time.
+Well seems like after going through man pages and reading source code, I found the solution from exactly where I expected to find it. When looking at the solution; I feel like google was not a strong one.
 
 It certainly felt refreshing that I did not have to be a slave to google-work-arounds and that the issue was unique enough to not have exisisted in many places, the way how I desired it to be. :)
 
@@ -10,18 +10,17 @@ A project to deliver a sudoless shutdown script to use, I wanted to make a conti
 
 (Clarification :: I don't want to give any bash shell the privilege to run as a sudo without password prompt - this is trivial and easily done. Rather I want to explore the alternatives to create a heavy-weight hack around the issue as a learning experience.)
 
-@PROJECT:
-About doability of the said issue: A potential hack should exist due to the fact that many GUI's call these out and the baseline. A basic grep with ps aux proved that for example unity runs as user but has the access for the shutdown functions.
+-Proof was accurate.
 
-@TODO:
+About doability of the said issue: A potential hack should exist due to the fact that many GUI's call these out and the baseline. A basic grep with ps aux proved that for example unity runs as user but has the access for the shutdown functions.
 
 --- in C ---
 
-check: (1) sysv.h library
+check: (done) (1) sysv.h library
 
-check: (2) nih/*.h library
+check: (done) (2) nih/*.h library
 
-check: (3) nih-dbus/*.h library
+check: (done) (3) nih-dbus/*.h library
 
 (2, 3 ) libnih (external)
 (1) upstart (internal, in compiled kernel)
@@ -29,8 +28,6 @@ check: (3) nih-dbus/*.h library
 !!!
 
 Sysvinit.h  -? Might be an easy solution. @Sysvinit package.
-
-@TODO:
 
 System Daemon PolicyKit - if a basic hack around the issue fails, a possible hack around PolicyKit might be necessary. 
 It would at least become very interesting, if this is the case in here. However there exists a workaround by creating a Daemon that would deliver the hack.
