@@ -33,3 +33,6 @@ It would at least become very interesting, if this is the case in here. However 
 
 For the purpose for project the c file in upstart internal kernel; the shutdown function in shutdown.c is the only interesting part out there. A delayed shutdown is not as intriguing to be made as a sudoless script as it is possible to make hacks around the variations that give the results immediadetely. 
 
+-------------------------------------------
+
+It seems that adapting around PolKit is the way to go. After going through the source code of PolicyKit and seeing what it does over the manpage.
